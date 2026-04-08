@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IEL Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar">
+            <div class="logo">IEL 2026</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#info">Info</a></li>
+                <li><a href="#registration">Registration</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>ITS E-Sports League</h1>
+            <p>Daftar sekarang dan buktikan timmu adalah yang terbaik!</p>
+            <a href="#registration" class="btn-primary">Daftar Sekarang</a>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="info" class="card">
+            <h2>What is IEL?</h2>
+            <p>
+                ITS E-Sports League (IEL) adalah turnamen e-sports terbesar di kampus. 
+                Tahun ini, kami mempertandingkan divisi Mobile Legends, PUBGM, Valorant, dan EA FC. 
+                Siapkan timmu dan raih total hadiah puluhan juta rupiah!
+            </p>
+        </section>
+
+        <section id="game-formats" class="card">
+            <h2>Format Turnamen</h2>
+            <div class="games-grid">
+                <div class="game-card">
+                    <h3>Mobile Legends</h3>
+                    <p>Sistem Draft Pick (Custom Room). Format Best of 3 (BO3) untuk babak penyisihan dan Best of 5 (BO5) untuk Grand Final.</p>
+                </div>
+                <div class="game-card">
+                    <h3>PUBGM</h3>
+                    <p>Sistem poin (Placement & Elimination). Terdiri dari 4 match per grup, top 16 dari akumulasi poin melaju ke Grand Final.</p>
+                </div>
+                <div class="game-card">
+                    <h3>Valorant</h3>
+                    <p>Format 5v5 Competitive. Best of 1 (BO1) Single Elimination. Babak Semifinal dan Grand Final menggunakan Best of 3 (BO3).</p>
+                </div>
+                <div class="game-card">
+                    <h3>EA FC 26</h3>
+                    <p>Mode Kick-off 1v1. Half length 6 menit. Format Single Elimination (sistem gugur) dari awal hingga akhir turnamen.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="registration" class="card">
+            <h2>Form Pendaftaran Tim</h2>
+            <form id="iel-form" class="form">
+                <div class="form-group">
+                    <label for="team-name">Nama Tim</label>
+                    <input type="text" id="team-name" placeholder="Masukkan nama tim">
+                </div>
+
+                <div class="form-group">
+                    <label for="captain-email">Email Kapten</label>
+                    <input type="email" id="captain-email" placeholder="email@example.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="game-category">Kategori Game</label>
+                    <select id="game-category">
+                        <option value="Mobile Legends">Mobile Legends</option>
+                        <option value="PUBGM">PUBGM</option>
+                        <option value="Valorant">Valorant</option>
+                        <option value="EA FC 26">EA FC 26</option>
+                    </select>
+                </div>
+
+                <div class="form-group form-group-inline">
+                    <label for="bring-device">
+                        <input type="checkbox" id="bring-device">
+                        Membawa device/peralatan sendiri
+                    </label>
+                </div>
+
+                <button type="submit" class="btn-primary">Submit Pendaftaran</button>
+
+                <p id="error-message" class="message error"></p>
+                <p id="success-message" class="message success"></p>
+            </form>
+        </section>
+
+        <section class="card">
+            <h2>Tim Terdaftar</h2>
+            <ul id="teams-list" class="teams-list"></ul>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 ITS E-Sports League.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
